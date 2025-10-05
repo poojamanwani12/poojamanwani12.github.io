@@ -1,24 +1,27 @@
+# site basics
 title: "Pooja Manwani"
 email: "manwanii.pooja@gmail.com"
+description: "PhD Research Scholar | Climate Studies | IIT Bombay"
+baseurl: ""        # leave empty for user sites
+url: "https://poojamanwani12.github.io"
 
-# Minimal Mistakes theme
+# Minimal Mistakes remote theme (required)
 remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-remote-theme
 
-# Basic settings
+# build settings
 markdown: kramdown
 permalink: pretty
-paginate: 5
 
-# Author info (optional sidebar)
+# author / sidebar info
 author:
   name: "Pooja Manwani"
-  avatar: "/assets/img/profile.jpg"
+  avatar: "/assets/img/profile.jpg"  # optional; create this file later or remove line
   bio: "PhD Research Scholar | Climate Studies, IIT Bombay"
   email: "manwanii.pooja@gmail.com"
 
-# Social links (shown in sidebar/footer)
+# social links (sidebar)
 social:
   - label: "Google Scholar"
     icon: "fas fa-graduation-cap"
@@ -30,5 +33,7 @@ social:
     icon: "fab fa-linkedin"
     url: "#"
 
-# Enable navigation bar
+# Tell theme where navigation lives
+include: [_data]
+
 include: [_pages]
