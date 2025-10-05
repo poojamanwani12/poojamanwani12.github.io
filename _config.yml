@@ -1,0 +1,34 @@
+title: "Pooja Manwani"
+email: "manwanii.pooja@gmail.com"
+
+# Minimal Mistakes theme
+remote_theme: "mmistakes/minimal-mistakes"
+plugins:
+  - jekyll-remote-theme
+
+# Basic settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+
+# Author info (optional sidebar)
+author:
+  name: "Pooja Manwani"
+  avatar: "/assets/img/profile.jpg"
+  bio: "PhD Research Scholar | Climate Studies, IIT Bombay"
+  email: "manwanii.pooja@gmail.com"
+
+# Social links (shown in sidebar/footer)
+social:
+  - label: "Google Scholar"
+    icon: "fas fa-graduation-cap"
+    url: "https://scholar.google.com/citations?user=wiqeOswAAAAJ&hl=en"
+  - label: "GitHub"
+    icon: "fab fa-github"
+    url: "https://github.com/poojamanwani12"
+  - label: "LinkedIn"
+    icon: "fab fa-linkedin"
+    url: "#"
+
+# Enable navigation bar
+include: [_pages]
