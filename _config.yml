@@ -14,7 +14,7 @@ plugins:
 markdown: kramdown
 permalink: pretty
 
-# author / sidebar info
+# author/sidebar info
 author:
   name: "Pooja Manwani"
   avatar: "/assets/img/profile.jpg"  # optional; create this file later or remove line
@@ -35,5 +35,3 @@ social:
 
 # Tell theme where navigation lives
 include: [_data]
-
-include: [_pages]
