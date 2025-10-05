@@ -1,0 +1,16 @@
+# Main navigation bar
+main:
+  - title: "About Me"
+    url: /
+  - title: "Research & Projects"
+    url: /research-projects/
+  - title: "Publications"
+    url: /publications/
+  - title: "Notes"
+    url: /notes/
+  - title: "Beyond Research"
+    url: /beyond-research/
+  - title: "Reflections"
+    url: /reflections/
+  - title: "Contact"
+    url: /contact/
