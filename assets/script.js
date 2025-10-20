@@ -1,3 +1,4 @@
+
 // highlight active link based on path
 (function(){
   const path = location.pathname.split('/').pop() || 'index.html';

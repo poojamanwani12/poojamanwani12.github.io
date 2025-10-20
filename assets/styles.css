@@ -1,3 +1,4 @@
+
 :root{
   --bg:#ffffff;
   --grad1:#EAF6FF;
@@ -11,6 +12,7 @@
   --radius:18px;
   --shadow:0 8px 24px rgba(21,40,76,.08);
   --max:1100px;
+  --hero:#1E2A38; /* Soft Navy */
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -18,6 +20,7 @@ body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-s
   background:linear-gradient(180deg,var(--grad1),var(--grad2));}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
+
 header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.85);
   backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
 nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;
@@ -29,29 +32,56 @@ nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-con
 .links a{padding:8px 10px;border-radius:10px;color:#405167}
 .links a:hover{background:#edf4ff}
 .links a.active{background:#dfeeff}
+
 .wrap{max-width:var(--max);margin:auto;padding:28px 20px}
-.grid{display:grid;gap:20px}
-.grid-hero{grid-template-columns:1.1fr .9fr}
-@media(max-width:960px){.grid-hero{grid-template-columns:1fr}}
-.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+
+/* Stacked layout */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:32px}
 h1{font-size:38px;line-height:1.2;margin:0 0 10px}
 h2{font-size:26px;margin:0 0 14px}
 h3{font-size:18px;margin:0 0 6px}
 p.lead{color:var(--muted);margin-top:0}
-.hero{padding-top:28px}
-.hero-photo{display:flex;align-items:center;justify-content:center}
-.photo{width:220px;height:220px;border-radius:50%;border:6px solid #fff;box-shadow:var(--shadow);
-  background:#e8f6ff url('assets/profile.jpg') center/cover no-repeat}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:#4c5c72;font-size:12px}
-.two-col{display:grid;gap:20px}
-@media(min-width:780px){.two-col{grid-template-columns:1fr 1fr}}
 .list{display:grid;gap:12px;padding-left:0;margin:0;list-style:none}
 .item{padding:14px;border:1px solid var(--border);background:#fff;border-radius:14px}
-.muted{color:var(--muted)}
-.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-.btn{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--border);
-  padding:10px 14px;border-radius:12px;color:#1f3b63;box-shadow:var(--shadow)}
-.btn:hover{background:#f4f8ff}
+
+/* HERO RIBBON */
+.hero-ribbon{
+  background:var(--hero);
+  color:#f4f8ff;
+  border-radius:22px;
+  box-shadow:var(--shadow);
+  padding:28px;
+  display:grid;
+  grid-template-columns:180px 1fr;
+  gap:22px;
+  align-items:center;
+  margin-bottom:32px;
+}
+@media(max-width:720px){
+  .hero-ribbon{grid-template-columns:1fr}
+}
+.hero-photo{
+  width:180px;height:180px;border-radius:50%;border:6px solid rgba(255,255,255,.9);
+  background:#334253 url('assets/profile.jpg') center/cover no-repeat;
+  box-shadow:0 6px 18px rgba(0,0,0,.25);
+  margin:auto;
+}
+.hero-title{font-size:34px;line-height:1.2;margin:0 0 8px}
+.hero-desc{color:#e2e9f3;margin:0 0 12px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 14px}
+.hero-chip{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;color:#ebf3ff;font-size:12px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn-light{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#f7fbff;border:1px solid rgba(255,255,255,.6);
+  padding:10px 14px;border-radius:12px;color:#0f2744;text-decoration:none;
+}
+.btn-light:hover{background:#ffffff}
+.btn-light .icon{width:18px;height:18px;display:inline-block}
+
+/* Chips outside hero */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:#4c5c72;font-size:12px}
+
 footer{color:#72829a;font-size:14px;margin:30px 0 16px;text-align:center}
 .footer-wrap{max-width:var(--max);margin:auto}
