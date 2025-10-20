@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Contact | Pooja Manwani</title>
+  <meta name="description" content="Contact Pooja Manwani — email, profiles, quick message form.">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+
+</head>
+<body>
+
+<header>
+  <nav aria-label="Primary">
+    <div class="brand">
+      <div class="avatar" aria-hidden="true"></div>
+      <div>
+        <div class="title">Pooja Manwani</div>
+        <div style="font-size:12px;color:#72829a">Atmospheric Science • Air Quality • Data & ML</div>
+      </div>
+    </div>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="beyond.html">Beyond research</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="card" aria-label="Contact">
+    <h2>Contact</h2>
+    <div class="two-col">
+      <div>
+        <p>Email: <a href="mailto:poojamanwani987@gmail.com">poojamanwani987@gmail.com</a><br>
+           Phone: <a href="tel:+917668669759">+91 76686 69759</a><br>
+           Location: Mumbai, India</p>
+        <p>Profiles: <a href="https://scholar.google.com/citations?user=wiqeOswAAAAJ&hl=en" target="_blank">Google Scholar</a> • <a href="https://orcid.org/0009-0007-4298-2232" target="_blank">ORCID</a> • <a href="https://www.linkedin.com/in/poojamanwani23/" target="_blank">LinkedIn</a></p>
+      </div>
+      <form class="card" style="background:#f9fbff" onsubmit="event.preventDefault();alert('Thanks! Please email me directly.');">
+        <h3 style="margin-top:0">Send a quick note</h3>
+        <label>Name<br><input required style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);"></label><br><br>
+        <label>Email<br><input required type="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);"></label><br><br>
+        <label>Message<br><textarea required rows="4" style="width:100%;padding:10px;border-radius:10px;border:1px solid var(--border);"></textarea></label><br><br>
+        <button class="btn" type="submit">Send</button>
+        <p class="muted" style="margin:8px 0 0">Client‑side only. For real submissions, connect Formspree or Google Forms.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-wrap">© <span id="year"></span> Pooja Manwani • Built with GitHub Pages</div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="assets/script.js"></script>
+</footer>
+
+</body>
+</html>
