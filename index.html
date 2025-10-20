@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pooja Manwani | Atmospheric Chemistry & Air Quality</title>
+  <meta name="description" content="Portfolio of Pooja Manwani — Aerosols, Air Quality, Source Apportionment, Data & Machine Learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0e11; --card:#12161a; --muted:#a7b0be; --text:#f1f5f9; --accent:#67e8f9; --accent-2:#a78bfa; --chip:#1c232b;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max);margin:auto;padding:24px}
+    header{position:sticky;top:0;background:linear-gradient(to bottom, rgba(11,14,17,.95), rgba(11,14,17,.6));backdrop-filter:saturate(160%) blur(6px);z-index:20;border-bottom:1px solid #1f2937}
+    nav{display:flex;gap:18px;align-items:center;justify-content:space-between;max-width:var(--max);margin:auto;padding:10px 24px}
+    nav .links a{padding:8px 10px;border-radius:10px;color:var(--muted)}
+    nav .links a:hover{background:#171c22;color:var(--text)}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#0b0e11;font-weight:800}
+    .title{font-size:18px;font-weight:700}
+
+    .hero{padding:60px 24px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:900px){.grid{grid-template-columns:1.2fr .8fr}}
+    .card{background:var(--card);border:1px solid #1f2937;border-radius:18px;padding:22px}
+    h1{font-size:36px;line-height:1.2;margin:0 0 8px}
+    h2{font-size:24px;margin:0 0 14px}
+    p.lead{color:var(--muted);margin:0}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .chip{background:var(--chip);border:1px solid #243140;color:#cdd6e1;padding:6px 10px;border-radius:999px;font-size:12px}
+
+    .two-col{display:grid;gap:18px}
+    @media(min-width:750px){.two-col{grid-template-columns:1fr 1fr}}
+
+    .list{display:grid;gap:12px}
+    .item{padding:14px;border:1px solid #203041;background:#11161b;border-radius:14px}
+    .item h3{margin:0 0 6px;font-size:16px}
+    .muted{color:var(--muted)}
+    .bullet{display:flex;gap:10px}
+    .bullet::before{content:"•";opacity:.6}
+
+    .pub-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+    .pub-filter button{background:#10161b;border:1px solid #263240;border-radius:999px;padding:6px 10px;color:#cdd6e1;cursor:pointer}
+    .pub-filter button[aria-pressed="true"]{outline:2px solid var(--accent)}
+
+    .footer{margin:36px 0 16px;color:#8a95a6;font-size:14px}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:#0f1720;border:1px solid #2a3646;padding:10px 14px;border-radius:12px;color:#dfe7f3}
+    .btn:hover{background:#131c27}
+    .icon{width:18px;height:18px;display:inline-block}
+    code.inline{background:#0e141a;border:1px solid #21303f;border-radius:6px;padding:2px 6px}
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Primary">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">PM</div>
+        <div>
+          <div class="title">Pooja Manwani</div>
+          <div style="font-size:12px;color:var(--muted)">Atmospheric Chemistry • Aerosols • Source Apportionment • ML</div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#talks">Talks</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO / ABOUT -->
+    <section id="about" class="hero grid" aria-label="Intro">
+      <div class="card">
+        <h1>Atmospheric Chemistry & Air Quality</h1>
+        <p class="lead">Ph.D. Scholar, IIT Bombay (Centre for Climate Studies). Researching chemical characterisation and source apportionment of PM2.5, aerosol acidity, and data-driven air-quality management.</p>
+        <div class="chips">
+          <span class="chip">Aerosol Science</span>
+          <span class="chip">Source Apportionment (PMF)</span>
+          <span class="chip">Aerosol Acidity</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Uncertainty Quantification</span>
+          <span class="chip">Data Visualization</span>
+        </div>
+        <div class="cta">
+          <a class="btn" href="#contact" aria-label="Email Pooja">
+            <span class="icon" aria-hidden="true">✉️</span> Email
+          </a>
+          <a class="btn" href="https://scholar.google.com/citations?user=wiqeOswAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a class="btn" href="https://orcid.org/0009-0007-4298-2232" target="_blank" rel="noreferrer">ORCID</a>
+          <a class="btn" href="https://www.linkedin.com/in/poojamanwani23/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <aside class="card" aria-label="At a glance">
+        <h2>At a glance</h2>
+        <ul class="list" style="margin:0;padding-left:0;list-style:none">
+          <li class="bullet">Ph.D. (expected Dec 2025) • CGPA 8.2</li>
+          <li class="bullet">M.Sc. AOS, IIT Bhubaneswar • CGPA 9.44</li>
+          <li class="bullet">NCAP–COALESCE (MoEFCC) WP-2 Coordinator</li>
+          <li class="bullet">PMF + ML hybrid modelling for source attribution</li>
+          <li class="bullet">Power BI dashboard for Indian source-apportionment meta-analysis</li>
+        </ul>
+      </aside>
+    </section>
+
+    <!-- RESEARCH FOCUS -->
+    <section id="research" class="two-col" aria-label="Research">
+      <div class="card">
+        <h2>Research focus</h2>
+        <ul class="list" style="margin:0;padding-left:0;list-style:none">
+          <li class="item">
+            <h3>PM2.5: chemistry, optics & episodic events</h3>
+            <div class="muted">Biomass burning, dust intrusions, festive fireworks; impacts on regional air quality.</div>
+          </li>
+          <li class="item">
+            <h3>Meteorology & transport</h3>
+            <div class="muted">Back-trajectory clusters, seasonal drivers, dispersion & potential source regions (HYSPLIT).</div>
+          </li>
+          <li class="item">
+            <h3>Aerosol acidity & health-relevant metrics</h3>
+            <div class="muted">Multi-proxy acidity, neutralization, oxidative potential; regional comparisons.</div>
+          </li>
+          <li class="item">
+            <h3>Source apportionment & ML</h3>
+            <div class="muted">EPA-PMF 5.0 + hybrid ML to isolate meteorology-driven variability.</div>
+          </li>
+          <li class="item">
+            <h3>Uncertainty & sensitivity</h3>
+            <div class="muted">Fuzzy logic + Monte Carlo for health-risk assessment of PM2.5 exposure.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Toolbox</h2>
+        <div class="chips">
+          <span class="chip">Python • R • MATLAB</span>
+          <span class="chip">NumPy • Pandas • scikit-learn</span>
+          <span class="chip">TensorFlow • PyTorch</span>
+          <span class="chip">Matplotlib • Seaborn</span>
+          <span class="chip">Power BI • ArcGIS</span>
+          <span class="chip">EPA-PMF • HYSPLIT • WRF</span>
+          <span class="chip">Ion Chromatography • ICP–OES</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="card" aria-label="Publications">
+      <h2>Publications</h2>
+      <div class="pub-filter" role="toolbar" aria-label="Filter publications">
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="2025">2025</button>
+        <button type="button" data-filter="2024">2024</button>
+        <button type="button" data-filter="abstracts">Abstracts</button>
+      </div>
+      <ol class="list" id="pub-list" style="margin:0;padding-left:18px">
+        <li class="item" data-year="2025">
+          <h3>Impact of open-field biomass burning on regional air quality in Northern India</h3>
+          <div class="muted">Manwani, P., Venkataraman, C., & Phuleria, H. C. (2025). <i>Journal of Environmental Sciences</i>, 158, 126–136.</div>
+        </li>
+        <li class="item" data-year="2024">
+          <h3>Variation in oxidative potential of fine particulate matter and its association with chemical constituents at a regional site in India</h3>
+          <div class="muted">Dubey, S., Manwani, P., Yadav, S., & Phuleria, H. C. (2024). <i>Science of the Total Environment</i>, 954, 176159.</div>
+        </li>
+        <li class="item" data-year="abstracts" aria-label="Conference abstract">
+          <h3>Unravelling the nexus of emission sources and meteorology on regional PM2.5 using source-apportionment and machine learning</h3>
+          <div class="muted">Manwani, P., Lekinwala, N., Bhushan, M., Venkataraman, C., & Phuleria, H. (2024). <i>EGU General Assembly Abstracts</i>.</div>
+        </li>
+        <li class="item" data-year="abstracts" aria-label="Conference abstract">
+          <h3>Spatial and temporal variation of aerosol acidity of PM2.5 across three distinct geographical locations in India</h3>
+          <div class="muted">Manwani, P., Lokhande, P., Sharma, R., Venkataraman, C., & Phuleria, H. (2023). <i>AGU Fall Meeting Abstracts</i>.</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- PROJECTS / HIGHLIGHTS -->
+    <section id="projects" class="two-col" aria-label="Projects">
+      <div class="card">
+        <h2>Highlights</h2>
+        <ul class="list" style="margin:0;padding-left:0;list-style:none">
+          <li class="item">
+            <h3>NCAP–COALESCE WP-2 Student Coordinator</h3>
+            <div class="muted">Coordinated 11 multi-city field sites: sampling, lab analysis, QA/QC, database & documentation.</div>
+          </li>
+          <li class="item">
+            <h3>Pan-India Source-Apportionment Meta-analysis</h3>
+            <div class="muted">Synthesised literature and built an interactive Power BI dashboard for regional source contributions.</div>
+          </li>
+          <li class="item">
+            <h3>PMF–ML Hybrid Modelling</h3>
+            <div class="muted">Integrated meteorology to refine source attribution and explain variability.</div>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Posters & Workshops</h2>
+        <ul class="list" style="margin:0;padding-left:0;list-style:none">
+          <li class="item"><h3>Uncertainty Estimation & PMF (Workshop)</h3><div class="muted">Organised training on EPA–PMF 5.0 (2022).</div></li>
+          <li class="item"><h3>Interdisciplinary Climate Studies Summer School</h3><div class="muted">Organising member (2019).</div></li>
+          <li class="item"><h3>NCAP Coalesce Science Meeting</h3><div class="muted">Coordinated 70 participants & 60+ talks (2023).</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TALKS / TEACHING (optional) -->
+    <section id="talks" class="card" aria-label="Talks">
+      <h2>Talks & Teaching</h2>
+      <ul class="list" style="margin:0;padding-left:0;list-style:none">
+        <li class="item"><h3>Guest sessions / TA work</h3><div class="muted">Add brief bullets or links here.</div></li>
+      </ul>
+    </section>
+
+    <!-- CV & DOWNLOADS -->
+    <section id="cv" class="two-col" aria-label="CV">
+      <div class="card">
+        <h2>CV & Docs</h2>
+        <p>Download my latest CV and sample materials.</p>
+        <div class="cta">
+          <a class="btn" href="CV.pdf" download>Download CV (PDF)</a>
+          <a class="btn" href="https://drive.google.com/file/d/15EuJcKOt-0Y3shCuerAKunuxKgl1PqxY/view?usp=sharing" target="_blank" rel="noreferrer">View on Drive</a>
+        </div>
+        <p class="muted">Replace <code class="inline">CV.pdf</code> with your file in the repo root.</p>
+      </div>
+      <div class="card">
+        <h2>Awards</h2>
+        <ul class="list" style="margin:0;padding-left:0;list-style:none">
+          <li class="item"><h3>INSPIRE Scholar (DST)</h3><div class="muted">2013–2018</div></li>
+          <li class="item"><h3>1st Rank – M.Sc. (Best Thesis)</h3><div class="muted">IIT Bhubaneswar, 2018</div></li>
+          <li class="item"><h3>GATE 2018 (XE) AIR 535</h3></li>
+          <li class="item"><h3>JAM 2016 (MS) AIR 70</h3></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card" aria-label="Contact">
+      <h2>Contact</h2>
+      <div class="two-col">
+        <div>
+          <p>Email: <a href="mailto:poojamanwani987@gmail.com">poojamanwani987@gmail.com</a><br>
+             Phone: <a href="tel:+917668669759">+91 76686 69759</a><br>
+             Location: Mumbai, India</p>
+          <p>Profiles: <a href="https://scholar.google.com/citations?user=wiqeOswAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a> • <a href="https://orcid.org/0009-0007-4298-2232" target="_blank" rel="noreferrer">ORCID</a> • <a href="https://www.linkedin.com/in/poojamanwani23/" target="_blank" rel="noreferrer">LinkedIn</a></p>
+        </div>
+        <form class="card" style="background:#0e1318" onsubmit="event.preventDefault();alert('Thanks! Please email me directly.');">
+          <h3 style="margin-top:0">Quick note</h3>
+          <label>Name<br><input required style="width:100%;padding:10px;border-radius:10px;border:1px solid #263240;background:#0b1116;color:#e5edf7"></label><br><br>
+          <label>Email<br><input required type="email" style="width:100%;padding:10px;border-radius:10px;border:1px solid #263240;background:#0b1116;color:#e5edf7"></label><br><br>
+          <label>Message<br><textarea required rows="4" style="width:100%;padding:10px;border-radius:10px;border:1px solid #263240;background:#0b1116;color:#e5edf7"></textarea></label><br><br>
+          <button class="btn" type="submit">Send</button>
+          <p class="muted" style="margin:8px 0 0">This form is client-side only. Consider Formspree/Google Forms for submissions.</p>
+        </form>
+      </div>
+    </section>
+
+    <p class="footer">© <span id="year"></span> Pooja Manwani • Built with GitHub Pages. Theme: minimal dark.</p>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Publication filter
+    const buttons = document.querySelectorAll('.pub-filter button');
+    const items = document.querySelectorAll('#pub-list .item');
+    buttons.forEach(btn=>btn.addEventListener('click',()=>{
+      buttons.forEach(b=>b.setAttribute('aria-pressed','false'));
+      btn.setAttribute('aria-pressed','true');
+      const y = btn.dataset.filter;
+      items.forEach(it=>{
+        it.style.display = (y==='all' || it.dataset.year===y) ? '' : 'none';
+      })
+    }))
+  </script>
+</body>
+</html>
