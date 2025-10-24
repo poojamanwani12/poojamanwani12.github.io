@@ -1,19 +1,18 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Home | Pooja Manwani</title>
-  <meta name="description" content="Home — Atmospheric Scientist focused on aerosols & air quality.">
-
   <meta charset="utf-8" />
+  <title>Home | Pooja Manwani</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Atmospheric scientist focused on aerosols & air quality.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
-
 </head>
 <body>
 
+<!-- Header -->
 <header>
   <nav aria-label="Primary">
     <div class="brand">
@@ -34,12 +33,18 @@
 </header>
 
 <main class="wrap">
-  <!-- HERO RIBBON -->
-  <section class="hero-ribbon" aria-label="Intro ribbon">
-    <div class="hero-photo" role="img" aria-label="Portrait of Pooja"></div>
+  <!-- Dark Soft-Navy Hero Ribbon -->
+  <section class="hero-ribbon" aria-label="Intro">
+    <div class="hero-photo">
+      <!-- IMPORTANT: Put your photo at assets/profile.jpg -->
+      <img src="assets/profile.jpg" alt="Portrait of Pooja Manwani" onerror="this.style.display='none'">
+    </div>
     <div>
       <h1 class="hero-title">Pooja Manwani</h1>
-      <p class="hero-desc">Atmospheric scientist focused on aerosols & air quality. Ph.D. scholar at IIT Bombay working on PM2.5 chemistry, source apportionment (PMF+ML), aerosol acidity and uncertainty for health-relevant insights.</p>
+      <p class="hero-desc">
+        Atmospheric scientist focused on aerosols & air quality. Ph.D. scholar at IIT Bombay working on PM2.5 chemistry,
+        source apportionment (PMF + ML), aerosol acidity, and uncertainty for health-relevant insights.
+      </p>
       <div class="hero-cta">
         <a class="btn-light" href="mailto:poojamanwani987@gmail.com">✉️ Email</a>
         <a class="btn-light" href="https://orcid.org/0009-0007-4298-2232" target="_blank" rel="noreferrer">🧬 ORCID</a>
@@ -49,37 +54,37 @@
     </div>
   </section>
 
-  <!-- RESEARCH INTERESTS -->
+  <!-- Research Interests -->
   <section aria-label="Research interests">
     <div class="card">
       <h2>Research Interests</h2>
       <ul class="list">
         <li class="item"><strong>Aerosol chemistry & PM2.5 events</strong> — biomass burning, dust intrusions, festive fireworks and their regional air-quality impacts.</li>
-        <li class="item"><strong>Source apportionment & ML</strong> — EPA‑PMF 5.0 + hybrid ML to decouple meteorology-driven variability.</li>
-        <li class="item"><strong>Aerosol acidity & health metrics</strong> — multi‑proxy acidity, neutralisation, oxidative potential; regional comparisons.</li>
-        <li class="item"><strong>Uncertainty quantification</strong> — fuzzy logic and Monte Carlo analysis for health‑risk assessment.</li>
+        <li class="item"><strong>Source apportionment & ML</strong> — EPA-PMF 5.0 + hybrid ML to decouple meteorology-driven variability.</li>
+        <li class="item"><strong>Aerosol acidity & health metrics</strong> — multi-proxy acidity, neutralisation, oxidative potential; regional comparisons.</li>
+        <li class="item"><strong>Uncertainty quantification</strong> — fuzzy logic and Monte Carlo analysis for health-risk assessment.</li>
       </ul>
     </div>
   </section>
 
-  <!-- HIGHLIGHTS -->
+  <!-- Highlights -->
   <section aria-label="Highlights">
     <div class="card">
       <h2>Highlights</h2>
       <ul class="list">
-        <li class="item">NCAP–COALESCE WP‑2 Student Coordinator for 11 field sites—sampling, QA/QC and data management.</li>
-        <li class="item">Interactive Power BI dashboard for a pan‑India source apportionment meta‑analysis.</li>
-        <li class="item">Conference papers at EGU and AGU on PM2.5 source‑meteorology nexus and aerosol acidity.</li>
+        <li class="item">NCAP–COALESCE WP-2 Student Coordinator for 11 field sites—sampling, QA/QC and data management.</li>
+        <li class="item">Interactive Power BI dashboard for a pan-India source apportionment meta-analysis.</li>
+        <li class="item">Conference papers at EGU and AGU on PM2.5 source-meteorology nexus and aerosol acidity.</li>
       </ul>
     </div>
   </section>
 </main>
 
+<!-- Footer -->
 <footer>
   <div class="footer-wrap">© <span id="year"></span> Pooja Manwani • Built with GitHub Pages</div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="assets/script.js"></script>
 </footer>
-
 </body>
 </html>
