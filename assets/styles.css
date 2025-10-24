@@ -64,7 +64,16 @@ p.lead{color:var(--muted); margin-top:0}
 .item{padding:14px; border:1px solid var(--border); background:#fff; border-radius:14px}
 .muted{color:var(--muted)}
 .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
-.chip{background:var(--chip); border:1px solid var(--border); padding:6px 10px; border-radius:999px; color:#4c5c72; font-size:12px}
+.chip {
+  background: linear-gradient(145deg,#f7faff,#eef5ff);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: #3a4b63;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(30,42,56,.05);
+}
 
 .cta, .hero-cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
 .btn{
