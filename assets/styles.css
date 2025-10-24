@@ -40,7 +40,7 @@ nav{
 .brand .avatar{
   width:40px; height:40px; border-radius:50%; object-fit:cover;
   border:2px solid #fff; box-shadow:var(--shadow);
-  background:#e8f6ff url('assets/profile.jpg') center/cover no-repeat
+  background:#e8f6ff url('assets/Profile.png') center/cover no-repeat
 }
 .brand .title{font-weight:700}
 .links a{padding:8px 10px; border-radius:10px; color:#405167}
