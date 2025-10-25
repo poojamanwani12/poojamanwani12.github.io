@@ -79,43 +79,53 @@
     </div>
 
 
-    <!-- Photo Gallery -->
-    <div class="card">
-      <h2 class="section-title">Photo gallery</h2>
-      <p class="muted" style="margin-top:-6px">Highlights from workshops, meetings, mentoring, and life beyond research.</p>
+    <!-- Photo Gallery (Sliding Carousel) -->
+<div class="card">
+  <h2 class="section-title">Photo gallery</h2>
+  <p class="muted" style="margin-top:-6px">Highlights from workshops, meetings, mentoring, and life beyond research.</p>
 
-      <div class="gallery">
-        <!-- Replace the src paths with your real images in /assets/gallery/ -->
-        <figure>
+  <div class="carousel" data-autoplay="true" data-interval="2500">
+    <button class="car-btn prev" aria-label="Previous slide">‹</button>
+
+    <div class="car-viewport">
+      <div class="car-track">
+        <!-- Each slide -->
+        <figure class="car-slide">
           <img src="assets/gallery/workshop_pmf.jpg" alt="Workshop: EPA-PMF 5.0 hands-on">
-          <figcaption>Workshop: EPA-PMF 5.0 — hands-on session</figcaption>
+          <figcaption>Workshop: EPA-PMF 5.0 — hands-on</figcaption>
         </figure>
-        <figure>
+
+        <figure class="car-slide">
           <img src="assets/gallery/coalesce_meet.jpg" alt="NCAP Coalesce Science Meeting">
-          <figcaption>NCAP Coalesce Science Meeting — organising team</figcaption>
+          <figcaption>NCAP Coalesce Science Meeting</figcaption>
         </figure>
-        <figure>
+
+        <figure class="car-slide">
           <img src="assets/gallery/mentoring.jpg" alt="Mentoring students">
-          <figcaption>Mentoring — data prep & QA/QC workflows</figcaption>
+          <figcaption>Mentoring — QA/QC workflows</figcaption>
         </figure>
-        <figure>
+
+        <figure class="car-slide">
           <img src="assets/gallery/summer_school.jpg" alt="Summer school session">
-          <figcaption>Summer school — atmospheric science module</figcaption>
+          <figcaption>Summer school module</figcaption>
         </figure>
-        <figure>
+
+        <figure class="car-slide">
           <img src="assets/gallery/calligraphy.jpg" alt="Calligraphy practice">
           <figcaption>Calligraphy — weekend practice</figcaption>
         </figure>
-        <figure>
+
+        <figure class="car-slide">
           <img src="assets/gallery/aerial_yoga.jpg" alt="Aerial acrobat yoga">
           <figcaption>Aerial acrobat yoga</figcaption>
         </figure>
       </div>
-
-
-      </p>
     </div>
 
+    <button class="car-btn next" aria-label="Next slide">›</button>
+  </div>
+
+ 
   </section>
 </main>
 
