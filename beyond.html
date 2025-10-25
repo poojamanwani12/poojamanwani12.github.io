@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Beyond research | Pooja Manwani</title>
-  <meta name="description" content="Leadership, outreach, hobbies.">
+  <meta name="description" content="Leadership, outreach, workshops, awards, hobbies, and a photo gallery.">
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,6 +11,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles.css">
 
+  <!-- Minimal gallery styles (uses your palette) -->
+  <style>
+    .section-title { color: var(--hero); }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .gallery figure {
+      margin: 0;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .gallery img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery figcaption {
+      padding: 8px 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
 
@@ -35,22 +63,94 @@
 
 <main class="wrap">
   <section aria-label="Beyond research">
+
+    <!-- Leadership & Organising -->
     <div class="card">
-      <h2>Beyond research</h2>
+      <h2 class="section-title">Leadership & organising</h2>
       <ul class="list">
-        <li class="item"><strong>Leadership & organising</strong> — NCAP Coalesce Science Meeting (70+ participants, 60+ talks); workshops on EPA-PMF 5.0.</li>
-        <li class="item"><strong>Community & outreach</strong> — summer schools, department events, mentoring.</li>
-        <li class="item"><strong>Hobbies</strong> — journaling, aerial acrobat yoga, calligraphy, DIY art.</li>
+        <li class="item"><strong>NCAP–COALESCE (MoEFCC)</strong> — Student coordinator (WP-2) supporting 11 field sites; sampling design, QA/QC, and data management.</li>
+        <li class="item">Co-organised <strong>NCAP Coalesce Science Meeting</strong> (70+ participants, 60+ talks): program curation, abstracts, logistics.</li>
       </ul>
     </div>
+
+    <!-- Outreach & Mentoring -->
     <div class="card">
-      <h2>Awards</h2>
+      <h2 class="section-title">Community outreach & mentoring</h2>
+      <ul class="list">
+        <li class="item">Department events and <strong>summer schools</strong> on atmospheric science and data workflows.</li>
+        <li class="item"><strong>Mentoring</strong> undergraduate/postgraduate students on PM<sub>2.5</sub> analysis and reproducible research.</li>
+      </ul>
+    </div>
+
+    <!-- Workshops & Talks -->
+    <div class="card">
+      <h2 class="section-title">Workshops & talks</h2>
+      <ul class="list">
+        <li class="item"><strong>EPA-PMF 5.0</strong> hands-on sessions — source apportionment setup, diagnostics, and interpretation.</li>
+        <li class="item"><strong>Power BI & dashboarding</strong> for meta-analysis and communicating air-quality evidence.</li>
+      </ul>
+    </div>
+
+    <!-- Awards -->
+    <div class="card">
+      <h2 class="section-title">Awards</h2>
       <ul class="list">
         <li class="item">INSPIRE Scholar (DST), 2013–2018</li>
         <li class="item">1st Rank — M.Sc. (Best Thesis), 2018</li>
         <li class="item">GATE 2018 (XE) AIR 535; JAM 2016 (MS) AIR 70</li>
       </ul>
     </div>
+
+    <!-- Hobbies -->
+    <div class="card">
+      <h2 class="section-title">Beyond the lab</h2>
+      <ul class="list">
+        <li class="item"><strong>Journaling</strong> and reflective writing</li>
+        <li class="item"><strong>Aerial acrobat yoga</strong></li>
+        <li class="item"><strong>Calligraphy</strong> & DIY art</li>
+      </ul>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="card">
+      <h2 class="section-title">Photo gallery</h2>
+      <p class="muted" style="margin-top:-6px">Highlights from workshops, meetings, mentoring, and life beyond research.</p>
+
+      <div class="gallery">
+        <!-- Replace the src paths with your real images in /assets/gallery/ -->
+        <figure>
+          <img src="assets/gallery/workshop_pmf.jpg" alt="Workshop: EPA-PMF 5.0 hands-on">
+          <figcaption>Workshop: EPA-PMF 5.0 — hands-on session</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/coalesce_meet.jpg" alt="NCAP Coalesce Science Meeting">
+          <figcaption>NCAP Coalesce Science Meeting — organising team</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/mentoring.jpg" alt="Mentoring students">
+          <figcaption>Mentoring — data prep & QA/QC workflows</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/summer_school.jpg" alt="Summer school session">
+          <figcaption>Summer school — atmospheric science module</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/calligraphy.jpg" alt="Calligraphy practice">
+          <figcaption>Calligraphy — weekend practice</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/gallery/aerial_yoga.jpg" alt="Aerial acrobat yoga">
+          <figcaption>Aerial acrobat yoga</figcaption>
+        </figure>
+      </div>
+
+      <!-- Optional note -->
+      <p class="muted" style="margin-top:10px">
+        Add your photos to <code>assets/gallery/</code> and use descriptive file names. 
+        For best results, use landscape images around 1200×800 px.
+      </p>
+    </div>
+
   </section>
 </main>
 
@@ -61,4 +161,4 @@
 </footer>
 
 </body>
-</html]
+</html>
