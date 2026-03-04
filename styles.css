@@ -27,7 +27,7 @@ nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-con
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-image: url("assets/profile.jpg");
+  background-image: url("../assets/profile.jpg");
   background-size: cover;
   background-position: center;
   margin-right: 10px;
@@ -48,7 +48,7 @@ p.lead{color:var(--muted);margin-top:0}
 .hero{padding-top:28px}
 .hero-photo{display:flex;align-items:center;justify-content:center}
 .photo{width:220px;height:220px;border-radius:50%;border:6px solid #fff;box-shadow:var(--shadow);
-  background:#e8f6ff url('assets/profile.jpg') center/cover no-repeat}
+  background:#e8f6ff url('../assets/profile.jpg') center/cover no-repeat}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 .chip{background:var(--chip);border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:#4c5c72;font-size:12px}
 .two-col{display:grid;gap:20px}
