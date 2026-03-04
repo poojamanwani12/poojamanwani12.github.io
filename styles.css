@@ -24,13 +24,13 @@ nav{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-con
   gap:16px;padding:12px 20px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand .avatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-image: url("../assets/profile.jpg");
-  background-size: cover;
-  background-position: center;
-  margin-right: 10px;
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  background-image:url("../assets/profile.jpg");
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center;
 }
 .brand .title{font-weight:700}
 .links a{padding:8px 10px;border-radius:10px;color:#405167}
