@@ -37,11 +37,16 @@ nav{
   gap:16px; padding:12px 20px
 }
 .brand{display:flex; align-items:center; gap:12px}
-.brand .avatar{
-  width:40px; height:40px; border-radius:50%; object-fit:cover;
-  border:2px solid #fff; box-shadow:var(--shadow);
-  background:#e8f6ff url('assets/Profile.png') center/cover no-repeat
+.brand .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-image: url("assets/profile.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-right: 10px;
 }
+
 .brand .title{font-weight:700}
 .links a{padding:8px 10px; border-radius:10px; color:#405167}
 .links a:hover{background:#edf4ff}
